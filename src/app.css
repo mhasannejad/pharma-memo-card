@@ -1,5 +1,5 @@
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: Jost, serif !important;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -16,6 +16,7 @@
 }
 
 body {
+    font-family: Jost, serif !important;
     background-color: #242424 !important;
     color: rgba(255, 255, 255, 0.87) !important;
 }
@@ -34,8 +35,7 @@ body {
     margin: 0;
     display: flex;
     place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+
 }
 
 h1 {
@@ -48,9 +48,10 @@ h1 {
 }
 
 #app {
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 0 0;
+    /*padding: 2rem;*/
     text-align: center;
+    width: 100%;
 }
 
 button {
@@ -92,13 +93,13 @@ button:focus-visible {
 .structure-image {
     cursor: pointer;
     margin: 10px;
-    max-width: 150px;
-    width: 150px !important;
+    max-width: 200px;
+    width: 200px !important;
     min-width: 150px;
     min-height: 150px;
     height: 150px !important;
     border-radius: 10px;
-    border-width: 1px;
+    border-width: 3px;
     border-color: white;
     border-style: solid;
 }
@@ -139,4 +140,14 @@ button:focus-visible {
 /* Do an horizontal flip on button click */
 .flip-it {
     transform: rotateY(180deg);
+}
+nav{
+    background-color: #1a1a1a !important;
+    color: white !important;
+}
+nav>*{
+    color: white !important;
+}
+label{
+    color: #212121 !important;
 }
