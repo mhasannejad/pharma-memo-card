@@ -1,8 +1,8 @@
 <script>
 
-import Login from "./modals/Login.svelte";
-import {openModal} from "svelte-modals";
-import Register from "./modals/Register.svelte";
+    import Login from "./modals/Login.svelte";
+    import {openModal} from "svelte-modals";
+    import Register from "./modals/Register.svelte";
 </script>
 
 
@@ -21,11 +21,13 @@ import Register from "./modals/Register.svelte";
         <div class="d-flex justify-content-between ">
             <button class="btn btn-outline-success me-auto mx-2" type="submit" on:click={()=>{
                 openModal(Login)
-            }}>Login</button>
+            }}>Login
+            </button>
 
-            <button class="btn btn-outline-success me-auto mx-2" type="submit"on:click={()=>{
+            <button class="btn btn-outline-success me-auto mx-2" type="submit" on:click={()=>{
                 openModal(Register)
-            }}>Register</button>
+            }}>Register
+            </button>
         </div>
     </div>
 </nav>

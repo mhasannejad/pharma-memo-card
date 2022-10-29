@@ -66,7 +66,7 @@
         } else if (choice_count === 1) {
             second_choice = reshaped_cells[x][y]
 
-            if (first_choice.id === second_choice.id) {
+            if (first_choice.id === second_choice.id && first_choice.type !== second_choice.type) {
                 toast.push('Correct')
                 let first_choice_pos = findWithValue(first_choice)
                 let second_choice_pos = findWithValue(second_choice)
